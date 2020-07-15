@@ -1,0 +1,49 @@
+<div class="po-row">
+    <div class="po-md-12"><po-divider p-label="TOTVS Gps Page List"></po-divider></div>
+
+    <po-accordion class="po-md-12">
+        <po-accordion-item p-label="Codigo">
+            <po-code-editor p-readonly p-language="html" p-height="600" [(ngModel)]="codeHTML"></po-code-editor>
+            <po-code-editor p-readonly p-language="typescript" p-height="150" [(ngModel)]="codeTS"></po-code-editor>
+        </po-accordion-item>
+        <po-accordion-item p-label="Exemplo">
+            <gps-page-list
+                class="po-md-12"
+                p-title="GPS Page List"
+                #gpsPageList
+                [(filter)]="filter"
+                [disclaimer-config]="diclaimerConfig"
+                (on-search)="onSearch($event)"
+                (on-advanced-search)="onAdvancedSearch()">
+                <po-table class="po-md-12" [p-columns]="[]" [p-items]="[]"></po-table>
+
+                <ng-template gps-advanced-search>
+                    <div class="po-row">
+              
+                      <po-input
+                        name="name"
+                        class="po-md-12"
+                        p-label="Nome"
+                        [(ngModel)]="filter.name">
+                      </po-input>
+              
+                      <po-datepicker
+                        name="startDate"
+                        class="po-md-6"
+                        p-label="Data inicial"
+                        [(ngModel)]="filter.startDate">
+                      </po-datepicker>
+                      <po-datepicker
+                        name="endDate"
+                        class="po-md-6"
+                        p-label="Data final"
+                        [(ngModel)]="filter.endDate">
+                      </po-datepicker>
+              
+                    </div>
+                  </ng-template>
+            </gps-page-list>
+        </po-accordion-item>
+    </po-accordion>
+
+</div>
