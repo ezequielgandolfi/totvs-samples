@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PoMenuItem, PoPageAction } from '@po-ui/ng-components';
+import { PoMenuItem } from '@po-ui/ng-components';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +12,8 @@ export class AppComponent {
         { label: 'Gps Services', link: 'gps-services' },
         { label: 'Gps Order List', link: 'gps-order-list' },
         { label: 'Gps Export Data', link: 'gps-export-data' },
-        { label: 'Gps Page List', link: 'gps-page-list' }
+        { label: 'Gps Page List', link: 'gps-page-list' },
+        { label: 'Gps Model Fill', link: 'gps-model-fill' }
     ]
 
 }

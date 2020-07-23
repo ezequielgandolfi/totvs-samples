@@ -13,6 +13,7 @@ import { ExampleGpsServicesComponent } from './gps-services/gps-services.compone
 import { ExampleGpsOrderListComponent } from './gps-order-list/gps-order-list.component';
 import { ExampleGpsExportDataComponent } from './gps-export-data/gps-export-data.component';
 import { ExampleGpsPageListComponent } from './gps-page-list/gps-page-list.component';
+import { ExampleGpsModelFillComponent } from './gps-model-fill/gps-model-fill.component';
 
 const modules = [
   BrowserModule,
@@ -29,7 +30,8 @@ const components = [
     ExampleGpsServicesComponent,
     ExampleGpsOrderListComponent,
     ExampleGpsExportDataComponent,
-    ExampleGpsPageListComponent
+    ExampleGpsPageListComponent,
+    ExampleGpsModelFillComponent
 ];
 const directives = [
 ];
