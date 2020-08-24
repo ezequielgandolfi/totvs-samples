@@ -1,40 +1,40 @@
-<div class="po-row">
-    <div class="po-md-12"><po-divider p-label="TOTVS Gps Services"></po-divider></div>
+<po-page-default p-title="TOTVS Gps Services">
+    <div class="po-row">
+        <po-accordion class="po-md-12">
+            <po-accordion-item p-label="Codigo - RxJs">
+                <po-code-editor p-readonly p-language="typescript" p-height="530" [(ngModel)]="codeBefore"></po-code-editor>
+            </po-accordion-item>
+            <!-- <po-accordion-item p-label="Exemplo - RxJs">
+                <po-widget class="po-row" p-no-shadow p-primary-label="Executar" (p-primary-action)="exampleBefore()">
+                    <po-table class="po-md-12"
+                        [p-columns]="columns"
+                        [p-items]="itemsBefore">
+                    </po-table>
+                </po-widget>
+            </po-accordion-item> -->
     
-    <po-accordion class="po-md-12">
-        <po-accordion-item p-label="Codigo - RxJs">
-            <po-code-editor p-readonly p-language="typescript" p-height="530" [(ngModel)]="codeBefore"></po-code-editor>
-        </po-accordion-item>
-        <!-- <po-accordion-item p-label="Exemplo - RxJs">
-            <po-widget class="po-row" p-no-shadow p-primary-label="Executar" (p-primary-action)="exampleBefore()">
-                <po-table class="po-md-12"
-                    [p-columns]="columns"
-                    [p-items]="itemsBefore">
-                </po-table>
-            </po-widget>
-        </po-accordion-item> -->
-
-        <po-accordion-item p-label="Codigo - TOTVS Gps Services">
-            <po-code-editor p-readonly p-language="typescript" p-height="150" [(ngModel)]="codeAfter"></po-code-editor>
-        </po-accordion-item>
-        <!-- <po-accordion-item p-label="Exemplo - TOTVS Gps Services">
-            <po-widget class="po-row" p-no-shadow p-primary-label="Executar" (p-primary-action)="exampleAfter()">
-                <po-table class="po-md-12"
-                    [p-columns]="columns"
-                    [p-items]="itemsAfter">
-                </po-table>
-            </po-widget>
-        </po-accordion-item> -->
-
-        <po-accordion-item p-label="Diferenças">
-            <ul class="po-md-12 po-p-4">
-                <li>Código mais simples</li>
-                <li>Contempla métodos para construir a URL no padrão de APIs TOTVS</li>
-                <li>Já retorna o objeto com a instância da classe informada</li>
-                <li>Substitui o retorno <i>Observable</i> (biblioteca) por <i>Promise</i> (padrão do JavaScript)</li>
-                <li>Melhorias e mudança de padrão sem alteração de código do projeto</li>
-                <li><i>Interceptor</i> embutido para tratamentos do framework</li>
-            </ul>
-        </po-accordion-item>
-    </po-accordion>
-</div>
+            <po-accordion-item p-label="Codigo - TOTVS Gps Services">
+                <po-code-editor p-readonly p-language="typescript" p-height="150" [(ngModel)]="codeAfter"></po-code-editor>
+            </po-accordion-item>
+            <!-- <po-accordion-item p-label="Exemplo - TOTVS Gps Services">
+                <po-widget class="po-row" p-no-shadow p-primary-label="Executar" (p-primary-action)="exampleAfter()">
+                    <po-table class="po-md-12"
+                        [p-columns]="columns"
+                        [p-items]="itemsAfter">
+                    </po-table>
+                </po-widget>
+            </po-accordion-item> -->
+    
+            <po-accordion-item p-label="Diferenças">
+                <ul class="po-md-12 po-p-4">
+                    <li>Código mais simples</li>
+                    <li>Contempla métodos para construir a URL no padrão de APIs TOTVS</li>
+                    <li>Já retorna o objeto com a instância da classe informada</li>
+                    <li>Substitui o retorno <i>Observable</i> (biblioteca) por <i>Promise</i> (padrão do JavaScript)</li>
+                    <li>Melhorias e mudança de padrão sem alteração de código do projeto</li>
+                    <li><i>Interceptor</i> embutido para tratamentos do framework</li>
+                </ul>
+            </po-accordion-item>
+        </po-accordion>
+    </div>
+</po-page-default>
