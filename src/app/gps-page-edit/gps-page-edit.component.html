@@ -1,0 +1,19 @@
+<gps-page-edit
+    p-title="TOTVS Gps Page Edit"
+    #gpsPageEdit>
+    <div class="po-row">
+        <po-accordion class="po-md-12">
+            <po-accordion-item p-label="Codigo">
+                <po-divider class="po-row po-mt-2" p-label="TypeScript"></po-divider>
+                <po-code-editor p-readonly p-language="typescript" p-height="310" [(ngModel)]="codeTS"></po-code-editor>
+            </po-accordion-item>
+            <po-accordion-item p-label="Exemplo">
+                <div class="po-row">
+                    <po-button class="po-md-4" p-label="Ativar loading" (p-click)="onLoadingClick()"></po-button>
+                    <po-button class="po-md-4"  p-label="Mostra campos customizados" (p-click)="onCustomClick()"></po-button>
+                </div>
+            </po-accordion-item>
+        </po-accordion>
+    
+    </div>
+</gps-page-edit>

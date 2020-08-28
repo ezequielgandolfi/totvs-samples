@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ExampleGpsServicesComponent } from './gps-services/gps-services.component';
 import { ExampleGpsOrderListComponent } from './gps-order-list/gps-order-list.component';
 import { ExampleGpsExportDataComponent } from './gps-export-data/gps-export-data.component';
+import { ExampleGpsPageEditComponent } from './gps-page-edit/gps-page-edit.component';
 import { ExampleGpsPageListComponent } from './gps-page-list/gps-page-list.component';
 import { ExampleGpsModelFillComponent } from './gps-model-fill/gps-model-fill.component';
 
@@ -11,6 +12,7 @@ const appRoutes: Routes = [
     { path: 'gps-services', component: ExampleGpsServicesComponent },
     { path: 'gps-order-list', component: ExampleGpsOrderListComponent },
     { path: 'gps-export-data', component: ExampleGpsExportDataComponent },
+    { path: 'gps-page-edit', component: ExampleGpsPageEditComponent },
     { path: 'gps-page-list', component: ExampleGpsPageListComponent },
     { path: 'gps-model-fill', component: ExampleGpsModelFillComponent },
 ];

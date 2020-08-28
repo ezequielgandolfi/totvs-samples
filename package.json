@@ -25,9 +25,9 @@
     "@totvs/po-theme": "3.2.0",
     "faker": "^5.0.0",
     "rxjs": "~6.5.5",
-    "totvs-gps-controls": "^4.0.0",
+    "totvs-gps-controls": "4.2.0",
     "totvs-gps-services": "4.0.0",
-    "totvs-gps-utils": "4.0.0",
+    "totvs-gps-utils": "4.0.1",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },

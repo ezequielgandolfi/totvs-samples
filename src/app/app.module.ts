@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ExampleGpsServicesComponent } from './gps-services/gps-services.component';
 import { ExampleGpsOrderListComponent } from './gps-order-list/gps-order-list.component';
 import { ExampleGpsExportDataComponent } from './gps-export-data/gps-export-data.component';
+import { ExampleGpsPageEditComponent } from './gps-page-edit/gps-page-edit.component';
 import { ExampleGpsPageListComponent } from './gps-page-list/gps-page-list.component';
 import { ExampleGpsModelFillComponent } from './gps-model-fill/gps-model-fill.component';
 
@@ -30,6 +31,7 @@ const components = [
     ExampleGpsServicesComponent,
     ExampleGpsOrderListComponent,
     ExampleGpsExportDataComponent,
+    ExampleGpsPageEditComponent,
     ExampleGpsPageListComponent,
     ExampleGpsModelFillComponent
 ];
